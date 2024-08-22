@@ -10,36 +10,121 @@
     <!-- tailwind and daisyUI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <!-- tailwind configuration -->
-    <script>
+     <style>
+      .font-manrope{
+        font-family: "Manrope", system-ui;
+      }
+     </style>
+    <!-- <script>
         tailwind.config = {
-             theme: {
-                extend: {
-                    colors: {
-                        primary: 'rgb(139, 195, 74)',
-                        secondary: 'rgb(17, 17, 17)',
-                        accent: 'rgb(106, 151, 57)',
-                        body_neutral: 'rgb(51, 51, 51)',
-                    },
-                    fontFamily: {
-                        Manrope: 'Manrope',
-                    },
-                    backgroundImage: {
-                        leaf1: "url('./assets/img1.png')",
-                        call_to_action: "url('./assets/img2.png')",
-                        testimonials: "url('./assets/img3.png')",
-                    },
+            theme: {
+              extend: {
+                colors: {
+                    btn_primary: 'rgb(171, 239, 95)',
+                    secondary: 'rgb(115, 115, 115)',
+                    body_neutral: 'rgb(30, 30, 30)',
                 },
-             },
+                fontFamily: {
+                    Manrope: "Manrope",
+                },
+              },
+            },
         }
-    </script> 
+    </script> -->
 </head>
-<body>
-    
-    
+<body class="font-manrope">
+    <!-- header section -->
+    <header class="bg-gradient-to-b from-neutral-100 to bg-neutral-50 py-8 ">
+      <!-- navbar -->
+        <nav class="w-10/12 mx-auto ">
+          <div class="navbar">
+            <div class="navbar-start">
+                <div class="flex items-center gap-1">
+                  <div class="rounded-[100%] bg-[#ABEF5F] px-1 ">
+                    <i class="fa-solid fa-arrow-right -rotate-45 text-xl "></i>
+
+                  </div>
+                  <a class="text-3xl font-extrabold text-black" href="#">Rinterio</a>
+                </div>
+              
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li class=" text-base font-semibold text-black"><a>Home</a></li>
+                <li class="text-gray-400 text-base font-medium"><a>Services</a></li>
+                <li class="text-gray-400 text-base font-medium"><a>Portfolio</a></li>
+                <li class="text-gray-400 text-base font-medium"><a>Blog</a></li>
+                <li class="text-gray-400 text-base font-medium"><a>Contact us</a></li>
+                
+              </ul>
+
+            </div>
+            <div class="navbar-end space-x-4">
+              <button class="bg-white rounded-full px-2 py-2 text-2xl text-gray-500 md:flex hidden "><i class="fa-solid fa-magnifying-glass"></i></button>
+              <button class="bg-white rounded-full px-2 py-2 text-2xl text-gray-500 md:flex hidden"><i class="fa-solid fill-slate-200 fa-cart-shopping"></i></button>
+              <button class="rounded-3xl bg-[#ABEF5F] py-2 px-5 md:flex items-center hidden  gap-2">
+                <a class="text-black text-lg font-extrabold">Book Consult
+                </a>
+                <i class="fa-solid fa-arrow-right -rotate-45 text-lg bg-gray-700  rounded-[100%] px-1 text-gray-300 "></i>
+  
+              </button>
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn rounded-full lg:hidden bg-slate-50">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box right-0  z-[1] mt-3 w-52 p-2 shadow">
+                    <li class=" text-base font-semibold text-black"><a>Home</a></li>
+                    <li class="text-gray-400 text-base font-medium"><a>Services</a></li>
+                    <li class="text-gray-400 text-base font-medium"><a>Portfolio</a></li>
+                    <li class="text-gray-400 text-base font-medium"><a>Blog</a></li>
+                    <li class="text-gray-400 text-base font-medium"><a>Contact us</a></li>
+                
+                    </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- banner section -->
+         <section class="w-10/12 mx-auto lg:px-16">
+          <div class="hero ">
+            <div class="hero-content text-center">
+              <div class=" flex flex-col items-center space-y-5">
+                <img  src="assets/banner.png" alt="">
+                <h1 class="text-6xl  text-[#212121] font-extrabold">A barn house of this design has a striking appearance</h1>
+                <p class="py-3 text-gray-950 font-medium">
+                  The barn house captivates with its blend of 
+                  rustic charm and modern sophistication, 
+                  featuring weathered wood, sleek metal accents, 
+                  and large windows that flood the space with natural light.</p>
+                  <div>
+                    <button class="btn rounded-full space-x-1 bg-[#ABEF5F80] border-[#ABEF5F]">
+                      <h1 class="text-lg font-bold text-black">View Details</h1>
+                       <span><i class="fa-solid fa-arrow-right -rotate-45 text-xl rounded-[100%] bg-[#ABEF5F] px-1 "></i></span>
+                    </button>
+
+                  </div>
+              </div>
+            </div>
+          </div>
+         </section>
+    </header>
+    <!-- main section -->
+    <main>
+
+    </main>
+    <!-- footer section -->
+    <footer>
+        
+    </footer>
+
 </body>
 </html>
