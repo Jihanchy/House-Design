@@ -25,6 +25,13 @@
             },
             backgroundImage: {
               input: "url('./assets/bg.jpg')",
+              img1: "url('./assets/img1.png')",
+              img2: "url('./assets/img2.png')",
+              img3: "url('./assets/img3.png')",
+              img4: "url('./assets/img4.png')",
+              img5: "url('./assets/img5.png')",
+              img6: "url('./assets/img1.png')",
+
             },
           },
         },
@@ -41,7 +48,7 @@
     <!-- header section -->
     <header class="bg-gradient-to-b from-neutral-100 to bg-white py-8 mb-10 lg:mb-20 ">
       <!-- navbar -->
-        <nav class=" w-11/12 lg:w-10/12 mx-auto ">
+        <nav class=" w-11/12 lg:container lg:px-20 mx-auto ">
           <div class="navbar">
             <div class="navbar-start">
                 <div class="flex items-center gap-1">
@@ -93,7 +100,7 @@
         </nav>
 
         <!-- banner section -->
-        <section class="w-11/12 lg:w-10/12 mx-auto">
+        <section class="w-11/12 lg:container lg:px-20 mx-auto">
            <div class="flex flex-col items-center mt-6 space-y-6">
             <div class="">
               <img src="assets/banner.png" alt="">
@@ -124,7 +131,7 @@
         <section class="bg-[#f8f6f6] ">
                 
         <!-- thoughtful design section -->
-        <div class="relative w-11/12 lg:w-10/12   mx-auto">
+        <div class="relative w-11/12 lg:container lg:px-20   mx-auto">
             <div class="absolute top-11 -left-12 hidden lg:block">
               <img class="" src="assets/Vector.png" alt="">
             </div>
@@ -178,7 +185,7 @@
   
              </div>
         </div>
-        <div class="w-11/12 lg:w-10/12   mx-auto pb-20">
+        <div class="w-11/12 lg:container lg:px-20   mx-auto pb-20">
           <div class=" text-center rounded-3xl  shadow bg-white border-none grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 p-8 gap-6">
             <div class="stat border-none space-y-3 p-6 ">
               <div class="text-black text-3xl"><i class="fa-regular fa-message"></i></div>
@@ -208,7 +215,7 @@
 
         <!-- Work Process Section -->
         
-          <div class="w-11/12 lg:w-10/12   mx-auto pb-20">
+          <div class="w-11/12 lg:container lg:px-20   mx-auto pb-20">
 
             <!-- text-content -->
 
@@ -267,7 +274,7 @@
       
       <!-- Our Latest portfolio section -->
        <section>
-        <div class="w-11/12 lg:w-10/12 mx-auto py-14">
+        <div class="w-11/12 lg:container lg:px-20 mx-auto py-14">
 
             <!-- text-content -->           
             <div class="space-y-4 text-center mb-5 w-full md:w-3/5 mx-auto">
@@ -285,10 +292,10 @@
             </div>
             
             <!--latest portfolio card container -->
-          <div class="grid grid-cols-1 md:grid-cols-10 lg:grid-cols-9 gap-4">
+         <div class="grid grid-cols-1 md:grid-cols-10 lg:grid-cols-9 gap-4">
             <!-- card-1 -->
               <div class="py-3 px-3 md:flex col-span-1 bg-white  items-center md:col-span-10 lg:col-span-6 rounded-lg border-2 gap-4">
-                <div class="w-full"><img class="w-full" src="assets/img1.png" alt=""></div>
+                <div class="w-full md:w-[1000px]  md:h-[230px] lg:h-full lg:w-full"><img class="w-full h-full" src="assets/img1.png" alt=""></div>
                 <div class="space-y-3">
                   <h1 class="text-xl font-bold text-black">Commercial</h1>
                   <p>Our latest portfolio features commercial design houses,
@@ -301,21 +308,20 @@
                         <div class="h-8 w-8 rounded-[50%] px-1 bg-[#ABEF5F] items-center">
                           <i class="fa-solid fa-arrow-right -rotate-45 text-lg  text-gray-500 "></i>
                         </div>
-                       
                       </button>
                        </div>
 
                 </div>
               </div>
-            <!--card-2  -->
+                <!-- card-2 -->
               <div class="w-full py-3 px-3 md:h-full  col-span-1 bg-white md:col-span-5 lg:col-span-3 rounded-lg border-2"><img class="md:h-full w-full" src="assets/img2.png" alt="">
               </div>
-            <!-- card-3 -->
+                <!-- card-3 -->
                <div class=" py-3 px-3  col-span-1 bg-white md:col-span-5 lg:col-span-2 rounded-lg border-2 order-5 lg:order-3"><img class="w-full" src="assets/img3.png" alt="">
               </div>
-           <!-- card-4 -->
+              <!-- card-4 -->
            <div class="py-3 px-3 md:flex lg:flex  col-span-1 bg-white md:col-span-10 items-center lg:col-span-5 rounded-lg border-2 gap-4 order-4 lg:order-4">
-            <div class="w-full"><img class="w-full" src="assets/img4.png" alt=""></div>
+            <div class="w-full md:w-[600px]"><img class="w-full" src="assets/img4.png" alt=""></div>
             <div class="space-y-3">
               <h1 class="text-xl font-bold text-black">Commercial</h1>
               <p>Our latest portfolio highlights living design houses with stylish, functional, and personalized spaces</p>
@@ -331,20 +337,21 @@
 
             </div>
           </div>
-          <!-- card-5 -->
+        
           <div class=" py-3 px-3   col-span-1 bg-white md:col-span-5 lg:col-span-2 rounded-lg border-2 order-3 lg:order-5 "><img class="w-full" src="assets/img5.png" alt="">
           </div>
-           <!-- card-6 --> 
+           
           <div class=" py-3 px-3 lg:hidden  col-span-1 bg-white md:col-span-5 lg:col-span-2 rounded-lg border-2 order-6 "><img class="w-full" src="assets/img5.png" alt="">
           </div>
 
         </div>
-        </div>
+
+             
        </section>
 
        <!-- Read our articles and news section -->
         <section class="bg-[#f8f6f6] mb-2">
-          <div class="w-11/12 lg:w-10/12 mx-auto py-14">
+          <div class="w-11/12 lg:container lg:px-20 mx-auto py-14">
               <!-- text-content -->
                <div>
                 <div class="space-y-4 text-center mb-5 w-full md:w-3/5 mx-auto">
@@ -437,7 +444,7 @@
                 <!-- card-3 -->
                 <div class="flex flex-col items-center md:flex-row lg:flex-col gap-4 space-y-3 px-4 py-4 rounded-xl bg-white">
                   <!-- img -->
-                  <div class="md:w-full"><img class="" src="assets/article3.png" alt=""></div>
+                  <div class="w-full"><img class="" src="assets/article3.png" alt=""></div>
                   <!-- text -->
                   <div class="space-y-1">
                     <div class="flex gap-4">
@@ -474,9 +481,9 @@
         </section>
 
       <!-- Let's discuss next project section -->
-       <section class="bg-white">
-         <div class="w-[98%] px-3 py-20 md:px-20 lg:px-44 mx-auto  bg-center bg-cover bg-input  bg-no-repeat">
-          <div class=" space-y-7 mx-auto">
+       <section class="bg-white ">
+         <div class="w-[98%]  px-3 py-20 md:px-20 lg:px-44 mx-auto  bg-center bg-cover bg-input  bg-no-repeat">
+          <div class=" space-y-7 lg:container mx-auto">
 
             <!-- text-content -->
             <div class="">
