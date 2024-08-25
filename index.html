@@ -21,27 +21,23 @@
         theme: {
           extend:{
             colors: {
-              primary: 'rgb(139, 195, 74)',                                                   
+              btn_primary: 'rgb(171, 239, 95)',
+              btn_secondary: 'rgba(171, 239, 95, 0.5)',
+                                                   
+            },
+            fontFamily: {
+               manrope: 'Manrope'
+
             },
             backgroundImage: {
               input: "url('./assets/bg.jpg')",
-              img1: "url('./assets/img1.png')",
-              img2: "url('./assets/img2.png')",
-              img3: "url('./assets/img3.png')",
-              img4: "url('./assets/img4.png')",
-              img5: "url('./assets/img5.png')",
-              img6: "url('./assets/img1.png')",
 
             },
           },
         },
       }
     </script>
-     <style>
-      .font-manrope{
-        font-family: "Manrope", system-ui;
-      }
-     </style>
+
 </head>
 <body class="font-manrope">
 
@@ -52,7 +48,7 @@
           <div class="navbar">
             <div class="navbar-start">
                 <div class="flex items-center gap-1">
-                  <div class="rounded-[100%] bg-[#ABEF5F] px-1 ">
+                  <div class="rounded-[100%] bg-btn_primary px-1 ">
                     <i class="fa-solid fa-arrow-right -rotate-45 text-xl "></i>
 
                   </div>
@@ -74,7 +70,7 @@
             <div class="navbar-end  space-x-4">
               <button class="bg-white rounded-full px-2 py-2 text-2xl text-gray-500 md:flex hidden "><i class="fa-solid fa-magnifying-glass"></i></button>
               <button class="bg-white rounded-full px-2 py-2 text-2xl text-gray-500 md:flex hidden"><i class="fa-solid fill-slate-200 fa-cart-shopping"></i></button>
-              <button class="rounded-3xl bg-[#ABEF5F] py-2 px-5 md:flex flex-row items-center hidden  gap-2">
+              <button class="rounded-3xl bg-btn_primary py-2 px-5 md:flex flex-row items-center hidden  gap-2">
                 <a class="text-black text-lg font-extrabold">Book Consult
                 </a>
                 <i class="fa-solid fa-arrow-right -rotate-45 text-lg bg-gray-700  rounded-[100%] px-1 text-gray-300 "></i>
@@ -113,7 +109,7 @@
                  by a field of tall, swaying golden grass..</p>
             </div>
             <div class="">
-              <button class=" flex px-20 md:px-4 items-center bg-[#ABEF5F80] rounded-full btn border-[#ABEF5F]">
+              <button class=" flex px-20 md:px-4 items-center bg-btn_secondary rounded-full btn border-btn_primary">
                 <span class="text-black font-bold text-lg">View Details</span>
                 <i class="fa-solid fa-arrow-right -rotate-45 text-xl rounded-[100%] bg-[#ABEF5F] px-1 "></i>
              
@@ -265,7 +261,7 @@
                         <!-- Rating percentage ends -->
                         <h1 class="text-xl font-bold text-gray-600 pt-10">Write Your Opinion</h1>
                         <p>"Thoughtful design with excellent use of space; truly exceeded our expectations."</p>
-                        <div class="flex justify-center items-center  bg-[#ABEF5F] rounded-md font-bold">
+                        <div class="flex justify-center items-center  bg-btn_primary rounded-md font-bold">
                           <button class="py-2">Write a review
                           </button>
                         </div>
@@ -466,7 +462,7 @@
         <div class="space-y-4 text-center mb-5 w-full md:w-3/5 mx-auto">
               <div class="mb-2 flex items-center  justify-center">
                 <button class="flex items-center px-4 py-1
-                 space-x-2 border-none rounded-full bg-[#ABEF5F33] border-2">
+                 space-x-2 border-none rounded-full bg-btn_secondary border-2">
                   <i class="fa-solid fa-arrow-right-long"></i><Span class="font-bold text-black"> Explore our Latest works</Span></button>
               </div>
               <h1 class="font-black text-2xl md:text-3xl lg:text-4xl text-black">
@@ -489,9 +485,9 @@
                     Each project combines functionality with style,
                      tailored to meet diverse business requirements</p>
                      <div class="">
-                      <button class=" flex pr-5 pl-1 py-2 gap-2  items-center bg-none hover:bg-[#ABEF5F80] rounded-e-full  hover:border-[#ABEF5F]">
+                      <button class=" flex pr-5 pl-1 py-2 gap-2  items-center bg-none hover:bg-btn_secondary rounded-e-full  hover:border-btn_primary">
                         <span class="text-black font-bold text-lg">View Details</span>
-                        <div class="h-8 w-8 rounded-[50%] px-1 bg-[#ABEF5F] items-center">
+                        <div class="h-8 w-8 rounded-[50%] px-1 bg-btn_primary items-center">
                           <i class="fa-solid fa-arrow-right -rotate-45 text-lg  text-gray-500 "></i>
                         </div>
                       </button>
@@ -512,9 +508,9 @@
               <h1 class="text-xl font-bold text-black">Commercial</h1>
               <p>Our latest portfolio highlights living design houses with stylish, functional, and personalized spaces</p>
                  <div class="">
-                  <button class=" flex pr-5 pl-1 py-2 gap-2  items-center bg-none hover:bg-[#ABEF5F80] rounded-e-full  hover:border-[#ABEF5F]">
+                  <button class=" flex pr-5 pl-1 py-2 gap-2  items-center bg-none hover:bg-btn_seecondary rounded-e-full  hover:border-btn_primary">
                     <span class="text-black font-bold text-lg">View Details</span>
-                    <div class="h-8 w-8 rounded-[50%] px-1 bg-[#ABEF5F] items-center">
+                    <div class="h-8 w-8 rounded-[50%] px-1 bg-btn_primary items-center">
                       <i class="fa-solid fa-arrow-right -rotate-45 text-lg  text-gray-500 "></i>
                     </div>
                   </button>
@@ -542,7 +538,7 @@
                 <div class="space-y-4 text-center mb-5 w-full md:w-3/5 mx-auto">
                   <div class="mb-2 flex items-center  justify-center">
                     <button class="flex items-center px-4 py-1
-                     space-x-2 border-none rounded-full bg-[#ABEF5F33] border-2">
+                     space-x-2 border-none rounded-full bg-btn_secondary border-2">
                       <i class="fa-solid fa-arrow-right-long"></i><Span class="font-bold text-black"> Rinterio News</Span></button>
                   </div>
                     <h1 class="font-black text-2xl md:text-3xl lg:text-4xl text-black">
@@ -678,7 +674,7 @@
                 <div class="space-y-4 text-center mb-5 w-full md:w-4/5  mx-auto">
                   <div class="mb-2 flex items-center  justify-center">
                     <button class="flex items-center px-4 py-1
-                     space-x-2 border-none rounded-full bg-[#ABEF5F33] border-2">
+                     space-x-2 border-none rounded-full bg-btn_secondary border-2">
                       <i class="fa-solid fa-arrow-right-long"></i><Span class="font-bold text-black"> Let's Connect</Span></button>
                   </div>
                     <h1 class="font-black text-3xl md:text-3xl lg:text-4xl text-black">
@@ -696,7 +692,7 @@
                 <input class="px-5 py-4 rounded-full border-2 border-slate-100 text-gray-600" type="number" required name="" id="" placeholder="Phone Number*">
                 <input class="px-5 py-4 rounded-full border-2 border-slate-100 text-gray-600" type="email" required  name="" id="" placeholder="Email Number*">
                 <textarea class="px-5 py-4 rounded-3xl border-2 row-span-10 border-slate-100 text-gray-700 col-span-1  md:col-span-2" name="" id="" placeholder="Write your message here"></textarea>
-                <button class="rounded-full col-span-1 md:col-span-2 justify-center bg-[#ABEF5F] py-2 px-5  flex items-center   gap-2">
+                <button class="rounded-full col-span-1 md:col-span-2 justify-center bg-btn_primary py-2 px-5  flex items-center   gap-2">
                   <a class="text-black text-lg font-extrabold">Send Mail
                   </a>
                   <div class="rounded-full h-7 w-7 bg-black"><i class="fa-solid fa-arrow-right -rotate-45 text-lg   text-gray-300 "></i>
@@ -717,7 +713,7 @@
     <div class="">
       <div class="space-y-3 text-center mb-0 w-full md:w-4/5 lg:w-3/5 mx-auto">
         <div class="flex justify-center gap-3 items-center">
-           <div class="h-8 w-8 rounded-[50%] bg-[#ABEF5F] px-2 ">
+           <div class="h-8 w-8 rounded-[50%] bg-btn_primary px-2 ">
             <i class="fa-solid fa-arrow-right -rotate-45 text-xl "></i>
            </div>
            <a class="text-3xl font-extrabold text-white " href="#">Rinterio</a>
@@ -729,15 +725,15 @@
    </div>
     <nav class="items-center ">
       <ul class="md:flex mt-0 md:flex-row gap-24 text-lg text-white space-y-5 md:space-y-0  ">
-        <li><a class="hover:text-[#ABEF5F]" href="#">Home</a></li>    
-        <li><a class="hover:text-[#ABEF5F]" href="#">Services</a></li>
-        <li><a class="hover:text-[#ABEF5F]" href="#">Portfolio</a></li>
-        <li><a class="hover:text-[#ABEF5F]" href="#">Blogs</a></li>
-        <li><a class="hover:text-[#ABEF5F]" href="#">Contact us</a></li>
+        <li><a class="hover:text-btn_primary" href="#">Home</a></li>    
+        <li><a class="hover:text-btn_primary" href="#">Services</a></li>
+        <li><a class="hover:text-btn_primary" href="#">Portfolio</a></li>
+        <li><a class="hover:text-btn_primary" href="#">Blogs</a></li>
+        <li><a class="hover:text-btn_primary" href="#">Contact us</a></li>
     
       </ul>
   </nav>
-  <button class="rounded-3xl bg-[#ABEF5F] py-2 px-5 flex items-center gap-2">
+  <button class="rounded-3xl bg-btn_primary py-2 px-5 flex items-center gap-2">
     <a class="text-black text-xl font-extrabold">Book Consult
     </a>
     <div class="h-8 w-8 rounded-[50%] px-1 bg-gray-700 items-center">
